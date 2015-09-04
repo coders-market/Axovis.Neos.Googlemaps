@@ -1,7 +1,7 @@
 {
     "name": "axovis/neos-googlemaps",
     "description": "Add googlemaps plugin to neos",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "type": "typo3-flow-plugin",
     "license": "GPL-2.0",
     "authors": [
@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Axovis\\Neos\\GoogleMaps": "Classes"
+            "Axovis\\Neos\\Googlemaps": "Classes"
         }
     }
 }
