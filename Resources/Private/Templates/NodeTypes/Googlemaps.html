@@ -76,7 +76,15 @@
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script type="application/javascript">
         $(document).ready(function() {
-            initializeMap();
+            if (typeof initializeMap === 'function') {
+                initializeMap();
+
+                if (typeof document.addEventListener === 'function') {
+                    document.addEventListener('Neos.PageLoaded', function() {
+                        initializeMap();
+                    }, false);
+                }
+            }
         });
     </script>
 </f:section>
