@@ -10,7 +10,7 @@ prototype(Axovis.Neos.Googlemaps:GoogleMap) < prototype(TYPO3.Neos:Content){
      infotext = ${q(node).property('infotext')}
      popupHeight = ${q(node).property('popupHeight')}
      popupWidth = ${q(node).property('popupWidth')}
-     draggable = ${q(node).property('draggable')}
+     draggable = ${q(node).property('draggable') == true ? 'true' : 'false'}
 }
 
 # Add javascript to default page, add only to page where element is available
